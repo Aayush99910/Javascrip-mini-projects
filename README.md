@@ -1,6 +1,8 @@
 # Javascript-mini-projects
 Just some mini projects which I build to make me consistent with Vanilla JS, HTML and CSS.
 
+When you click the link it doesn't open a new tab. So please right click and click on open in new tab. 
+
 LIVE PREVIEW
 Expense Tracker --> https://sensational-toffee-c5e4bf.netlify.app/
 
