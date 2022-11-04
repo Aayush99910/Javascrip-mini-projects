@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto&family=Signika+Negative:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    display: inline;
+}
+
+body {
+    background: url(sky.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.big-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-container {
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 300px;
+}
+
+.todo-app {
+    display: flex;
+    justify-content: center;
+    background-color: #3B7A57;
+    margin-bottom: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.todo-app p { 
+    font-size: 40px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.todo-input {
+    display: flex;
+    column-gap: 4px;
+}
+
+.add-todo {
+    flex: 5;
+    border: none;
+    border: 1px solid rgb(55, 50, 50);
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Roboto;
+    padding: 5px;
+}
+
+.add-todo::placeholder {
+    font-size: 18px;
+    font-family: Roboto;
+}
+
+.add-item-btn,
+.remove-item-btn {
+    flex: 1;
+    white-space: nowrap;
+    border: none;
+    font-family: Roboto;
+    border-radius: 6px;
+    background-color: #C49EB2;
+    color: white;
+    padding: 10px;
+    transition: 0.20s;
+}
+
+.add-item-btn:hover,
+.remove-item-btn:hover {
+    cursor: pointer;
+    background-color: #9c798b;
+}
+
+.todo-list {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 8px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.delete-btn {
+    margin-left: 8px;
+    border: none;
+    border-radius: 6px;
+    font-family: "Roboto";
+    background-color: #C49EB2;
+    color: white;
+    padding: 10px;
+}

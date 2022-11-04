@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="dollar-sign-solid.svg">
+</head>
+<body id="body">
+    <main>
+        <section class="big-container">
+            <div class="sub-container">
+                <div class="title-container">
+                    <p><span id="span">EXPENSE</span> <span id="span2">TRACKER</span></p>
+                </div>
+                <div class="input-form-container">
+                    <div>
+                        <p class="title">TRACK YOUR MONEY</p>
+                    </div>
+                    <div class="input-container">
+                        <div>
+                            <p class="des" id="moneySpentid">Money spent:</p><input class="location" id="money" type="text" placeholder="Where did you spend the money?">
+                        </div>
+                        <div>
+                            <p class="des" id="dateid">Date:</p><input class="date" id="date" type="date">
+                            <p class="des" id="amountid">Amount:</p><input class="amount" id="amount" type="text" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="add-btn" id="addButton" type="button">ADD</button>
+                </div>
+                <div class="table-container">
+                    <table class="table table-hover table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">-></th>
+                            <th scope="col">Money Spent</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Amount</th>
+                            <th><button class="clear-all-btn">ClearAll</button></th>
+                          </tr>
+                        </thead>
+                        <tbody id="table-body-id"></tbody>
+                      </table>
+                </div>
+            </div>
+        </section>
+        <div class="toggle-container">
+          <input class="dark-mode" id="dark-mode-id" type="checkbox">
+          <label class="label" for="dark-mode-id">
+            <div class="circle"></div>
+          </label>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

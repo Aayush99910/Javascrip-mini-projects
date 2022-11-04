@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;600&family=Rubik&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #1C1C1C;
+}
+
+.big-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sub-container {
+    display: grid;
+    grid-template-rows: 0fr 0fr 0fr 1fr;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title-container p {
+    font-size: 50px;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+}
+
+.input-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    min-width: 600px;
+}
+
+.title {
+    color: #4ADF86;
+    font-family: "Rubik", sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 10px;
+}
+
+.des {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    display: inline;
+    margin-right: 6px;
+}
+
+.date, 
+.amount,
+.location {
+    min-width: 218px;
+    border: none;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.date::placeholder,
+.amount::placeholder,
+.location::placeholder {
+    font-family: Arial;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus{
+    outline: none;
+    box-shadow: 2px 2px #10B981;
+}
+
+.location {
+    min-width: 450px;
+}
+
+.button-container {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-btn, 
+.remove-btn,
+.clear-all-btn {
+    padding: 5px 8px 5px 8px;
+    background-color: #10B981;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    color: rgb(235, 233, 233);
+    transition: 0.2s;
+}
+
+.add-btn:hover, 
+.remove-btn:hover {
+    cursor: pointer;
+    background-color: #117f5a;
+}
+
+.clear-all-btn {
+    background-color: purple;
+}
+
+.clear-all-btn:hover {
+    background-color: rgb(71, 11, 71);
+}
+
+.toggle-container {
+    position: absolute;
+    top: 110px;
+    left: 650px;
+}
+
+.dark-mode {
+    visibility: hidden;
+}
+
+.dark-mode:checked + label {
+    background-color: rgb(65, 65, 65);
+}
+
+.label {
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(198, 198, 198);
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+    width: 20px;
+    top: 2px;
+    left: 3px;
+    border-radius: 50%;
+    animation: toggleOff forwards linear 0.4s;
+}
+
+.dark-mode:checked + label .circle {
+    animation: toggleOn forwards linear 0.4s;
+}
+
+@keyframes toggleOn {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(53px);
+    }
+}
+
+@keyframes toggleOff {
+    0%{
+        transform: translateX(53px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.label:hover {
+    cursor: pointer;
+}

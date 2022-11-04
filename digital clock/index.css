@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    position: absolute;
+    color: rgb(18, 137, 188);
+    z-index: 2;
+    margin-bottom: 180px;
+    font-size: 40px; 
+    font-weight: bold;   
+}
+
+.am-pm {
+    position: absolute;
+    z-index: 2;
+    margin-left: 450px;
+    margin-top: 80px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.background {
+    background: url(Meh.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    color: white;
+    column-gap: 10px;;
+}
+
+.time-container {
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-digit-div {
+    flex: 2;
+    background-color: black;
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    flex: 0.5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254, 254, 254);
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter Tight', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+.big-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96vh;
+    width: 98vw;
+}
+
+.game-container {
+    background-color: #A9A9A9;
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.welcome-score {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #CAEBF2;
+    color: black;
+}
+
+.score {
+    font-size: 18px;
+    background-color: #CAEBF2;
+    color: black;
+}
+
+
+.question-answer {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.question {
+    font-size: 30px;
+    font-weight: normal;
+    background-color: #CAEBF2;
+    color: black;
+}
+
+button {
+    background-color: #FF3B3F;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 200px 5px 200px;
+    transition: 0.15s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #b51c1f;
+}
+
+input {
+    padding: 10px 0px 10px 0px;
+    font-size: 25px;
+    width: 470px;
+    text-align: center;
+}
+
+input::placeholder {
+    font-size: 18px;
+}
+
+.answer {
+    background-color: #CAEBF2;
+    color: black;
+}

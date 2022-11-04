@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  padding: 20px 0px 20px 0px;
+  background-color: rgb(38, 36, 36);
+}
+nav .nav-items {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(238, 230, 230);
+}
+nav .nav-items div p {
+  font-size: 20px;
+  margin-left: -10px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+nav .nav-items div a {
+  color: rgb(238, 230, 230);
+  text-decoration: none;
+  font-size: 18px;
+}
+nav .nav-items div a:hover {
+  text-decoration: underline;
+}
+
+main {
+  height: 89%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .background-change-button {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  min-height: 200px;
+}
+main .background-change-button .bg-color {
+  background-color: rgb(48, 45, 45);
+  height: 160px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+main .background-change-button .bg-color p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+main .background-change-button .btn-container {
+  display: flex;
+  justify-content: center;
+}
+main .background-change-button .btn-container .click-me-btn {
+  padding: 6px 15px 6px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: salmon;
+  color: rgb(244, 244, 244);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  transition: 0.15s;
+}
+main .background-change-button .btn-container .click-me-btn:hover {
+  cursor: pointer;
+  background-color: rgb(232, 106, 92);
+}/*# sourceMappingURL=style.css.map */
