@@ -108,7 +108,7 @@ function render() {
 
             tableDataMoneySpent.textContent = item.Title;
             tableDataDate.textContent = item.Date;
-            tableDataAmount.textContent = "₹ " + item.Amount;
+            tableDataAmount.textContent = "$ " + item.Amount;
 
             tableRow.append(tableHead, tableDataMoneySpent, tableDataDate, tableDataAmount, tableDataButton);
             tableBody.appendChild(tableRow); // appending all the child elements to the tbody element
